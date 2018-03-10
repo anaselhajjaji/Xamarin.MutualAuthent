@@ -22,7 +22,7 @@ To create a pkcs12 keystore:
 ```
 openssl pkcs12 -export -inkey priv_and_pub.key  -in CA.crt -name Server -out Server.pfx
 ```
-Note that in case hostname parameter in certificate information is important and take part in validation process:
+Note that the hostname parameter in certificate information is important and take part in validation process:
 ![alt text](Screenshots/specify_hostname.png)
 ## Trust the certificate in Android
 1. Go to Settings then 'Lock screen and security'
@@ -54,7 +54,10 @@ Note that in case hostname parameter in certificate information is important and
 
 ![alt text](Screenshots/certs_import.PNG)
 
-## Test Result
+## Test Results
+**Client** => **Server** (OK whether in same machine or in different machines)
+**Xamarin.Android** => **Server** (OK Java Way)
+**Xamarin.Android** => **Server** (KO .Net Way)
 
 ## References
 1. https://aboutssl.org/how-to-create-and-import-self-signed-certificate-to-android-device/
