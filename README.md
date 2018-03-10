@@ -23,7 +23,10 @@ To create a pkcs12 keystore:
 openssl pkcs12 -export -inkey priv_and_pub.key  -in CA.crt -name Server -out Server.pfx
 ```
 ## Trust the certificate in Android
+1. Go to Settings then 'Lock screen and security'
 ![alt text](Screenshots/android_install_1.png)
+2. Choose 'Other security settings'
+![alt text](Screenshots/android_install_2.png)
 
 ## References
 1. https://aboutssl.org/how-to-create-and-import-self-signed-certificate-to-android-device/
