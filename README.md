@@ -22,6 +22,8 @@ To create a pkcs12 keystore:
 ```
 openssl pkcs12 -export -inkey priv_and_pub.key  -in CA.crt -name Server -out Server.pfx
 ```
+Note that in case hostname parameter in certificate information is important and take part in validation process:
+![alt text](Screenshots/specify_hostname.png)
 ## Trust the certificate in Android
 1. Go to Settings then 'Lock screen and security'
 
@@ -38,6 +40,21 @@ openssl pkcs12 -export -inkey priv_and_pub.key  -in CA.crt -name Server -out Ser
 4. Choose a name, select 'VPN and apps' then validate, the certifcate can be found in 'Security certificates' as trusted CA
 
 ![alt text](Screenshots/android_install_4.png)
+
+## Trust the certificate in Windows
+1. Go to mmc from execute window
+
+![alt text](Screenshots/start_mmc.PNG)
+
+2. Choose 'Add/Remove snap-ins' then add Certificates and validate
+
+![alt text](Screenshots/add_remove_snapins.PNG)
+
+3. Import the certificate under Trusted CA folder
+
+![alt text](Screenshots/certs_import.PNG)
+
+## Test Result
 
 ## References
 1. https://aboutssl.org/how-to-create-and-import-self-signed-certificate-to-android-device/
