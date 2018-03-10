@@ -56,7 +56,9 @@ Note that the hostname parameter in certificate information is important and tak
 
 ## Test Results
 **Client** => **Server** (OK whether in same machine or in different machines)
+
 **Xamarin.Android** => **Server** (OK Java Way)
+
 **Xamarin.Android** => **Server** (KO .Net Way)
 
 ## References
