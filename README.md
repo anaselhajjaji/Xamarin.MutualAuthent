@@ -27,6 +27,10 @@ openssl pkcs12 -export -inkey priv_and_pub.key  -in CA.crt -name Server -out Ser
 ![alt text](Screenshots/android_install_1.png)
 2. Choose 'Other security settings'
 ![alt text](Screenshots/android_install_2.png)
+3. Choose 'Install from device storage' then select the Certificate (or keystore) in the device storage
+![alt text](Screenshots/android_install_3.png)
+4. Choose a name, select 'VPN and apps' then validate, the certifcate can be found in 'Security certificates' as trusted CA
+![alt text](Screenshots/android_install_4.png)
 
 ## References
 1. https://aboutssl.org/how-to-create-and-import-self-signed-certificate-to-android-device/
