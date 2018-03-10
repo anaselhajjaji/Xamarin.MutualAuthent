@@ -6,5 +6,5 @@
 ## Certificates Generation using OpenSSL
 
 ## References
-[1] https://aboutssl.org/how-to-create-and-import-self-signed-certificate-to-android-device/
-[2] https://www.codeproject.com/Articles/326574/An-Introduction-to-Mutual-SSL-Authentication
+1. https://aboutssl.org/how-to-create-and-import-self-signed-certificate-to-android-device/
+2. https://www.codeproject.com/Articles/326574/An-Introduction-to-Mutual-SSL-Authentication
