@@ -81,7 +81,7 @@ namespace Android.Client
                 // The server name must match the name on the server certificate.
                 try
                 {
-                    sslStream.AuthenticateAsClient(hostName, certificates, SslProtocols.Default, true);
+                    sslStream.AuthenticateAsClient(hostName, certificates, SslProtocols.Tls12, true);
                     DisplaySecurityLevel(sslStream);
                     DisplaySecurityServices(sslStream);
                     DisplayCertificateInformation(sslStream);
@@ -120,9 +120,10 @@ namespace Android.Client
 
         static void DisplaySecurityLevel(SslStream stream)
         {
-            Console.WriteLine("Cipher: {0} strength {1}", stream.CipherAlgorithm, stream.CipherStrength);
-            Console.WriteLine("Hash: {0} strength {1}", stream.HashAlgorithm, stream.HashStrength);
-            Console.WriteLine("Key exchange: {0} strength {1}", stream.KeyExchangeAlgorithm, stream.KeyExchangeStrength);
+            // FIXME Not Working
+            //Console.WriteLine("Cipher: {0} strength {1}", stream.CipherAlgorithm, stream.CipherStrength);
+            //Console.WriteLine("Hash: {0} strength {1}", stream.HashAlgorithm, stream.HashStrength);
+            //Console.WriteLine("Key exchange: {0} strength {1}", stream.KeyExchangeAlgorithm, stream.KeyExchangeStrength);
             Console.WriteLine("Protocol: {0}", stream.SslProtocol);
         }
 
@@ -141,7 +142,8 @@ namespace Android.Client
 
         static void DisplayCertificateInformation(SslStream stream)
         {
-            Console.WriteLine("Certificate revocation list checked: {0}", stream.CheckCertRevocationStatus);
+            // FIXME NOT WORKING
+            // Console.WriteLine("Certificate revocation list checked: {0}", stream.CheckCertRevocationStatus);
 
             X509Certificate localCertificate = stream.LocalCertificate;
             if (stream.LocalCertificate != null)

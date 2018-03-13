@@ -61,7 +61,7 @@ namespace MutualAuthentication.Server
                 try
                 {
                     // Authenticate the server and requires the client to authenticate.
-                    sslStream.AuthenticateAsServer(certificate, true, SslProtocols.Default, true);
+                    sslStream.AuthenticateAsServer(certificate, true, SslProtocols.Tls12, true);
                     // Display the properties and settings for the authenticated stream.
                     DisplaySecurityLevel(sslStream);
                     DisplaySecurityServices(sslStream);

@@ -51,7 +51,7 @@ namespace MutualAuthentication.Client
             // The server name must match the name on the server certificate.
             try
             {
-                sslStream.AuthenticateAsClient(hostName, certificates, SslProtocols.Default, true);
+                sslStream.AuthenticateAsClient(hostName, certificates, SslProtocols.Tls12, true);
                 DisplaySecurityLevel(sslStream);
                 DisplaySecurityServices(sslStream);
                 DisplayCertificateInformation(sslStream);
