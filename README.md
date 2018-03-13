@@ -59,7 +59,7 @@ Note that the hostname parameter in certificate information is important and tak
 
 **Xamarin.Android** => **Server** (OK Java Way)
 
-**Xamarin.Android** => **Server** (KO .Net Way)
+**Xamarin.Android** => **Server** (OK .Net Way)
 
 ## References
 1. https://aboutssl.org/how-to-create-and-import-self-signed-certificate-to-android-device/
